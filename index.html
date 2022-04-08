@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>JQuery Hands</title>
+    <style>
+      .chessboard {
+          width: 80%;
+        margin: auto;
+       
+      }
+      td{
+          width: 131px;
+          height: 131px;
+          /* background-color: aqua; */
+      }
+      tr:nth-child(even) > 
+      td:nth-child(even){
+        background-color: #000;
+      }
+      tr:nth-child(odd) > 
+      td:nth-child(odd){
+        background-color: #000;
+      }
+    </style>
+  </head>
+  <body>
+      <!-- task1 Create a Chessboard effect-->
+      <button id="create_chessboard">create chess board</button>
+      <button id="remove_chessboard">remove chess board</button>
+      <!-- task 2 Change button text -->
+      <button id="btn">Click Me</button>
+      <table id="chesstable">
+
+      </table>
+      <!-- Use the css()method to set the following styles for <p>:(Green background color, white text color, 25 pixels font size and a padding of 15 pixels)  -->
+      <p id="para">Use the css()method to set the following styles for this paragraph</p>
+     
+      <!-- task Use a jQuery method to remove all <div> elements with class="test" and class="demo". -->
+      <div class="test"><p>div test</p></div>
+      <div class="demo"><p>div demo </p></div>
+      <button id="remove">remove</button>
+      <button id="getclass">click to get class</button>
+      <p class="class1 class2 class3" id="test">get all the classes of this paragraph on click</p>
+      <p id="gclass"></p>
+    <div class="chessboard">
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
