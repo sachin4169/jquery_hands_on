@@ -68,4 +68,7 @@ $("#chkbox").click(()=>{
 $('#button1').click(function(){ 
     $(".demotable").find("tr:gt(1)").remove();
   });
+  $('#button2').click(function(){ 
+    $(".demotable").find("tr:eq(2)").remove();
+  });
 // Green background color, white text color, 25 pixels font size and a padding of 15 pixels
