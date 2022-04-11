@@ -71,4 +71,8 @@ $('#button1').click(function(){
   $('#button2').click(function(){ 
     $(".demotable").find("tr:eq(2)").remove();
   });
+  $("#addlist").click(()=>{
+      var value = $("#int_li").val()
+      $("#list").append("<li>"+value+"</li>");
+  });
 // Green background color, white text color, 25 pixels font size and a padding of 15 pixels
