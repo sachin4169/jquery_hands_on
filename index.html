@@ -8,46 +8,57 @@
     <title>JQuery Hands</title>
     <style>
       .chessboard {
-          width: 80%;
+        width: 80%;
         margin: auto;
-       
       }
-      td{
-          width: 131px;
-          height: 131px;
-          /* background-color: aqua; */
+      td {
+        width: 131px;
+        height: 131px;
+        /* background-color: aqua; */
       }
-      tr:nth-child(even) > 
-      td:nth-child(even){
+      tr:nth-child(even) > td:nth-child(even) {
         background-color: #000;
       }
-      tr:nth-child(odd) > 
-      td:nth-child(odd){
+      tr:nth-child(odd) > td:nth-child(odd) {
         background-color: #000;
       }
     </style>
   </head>
   <body>
-      <!-- task1 Create a Chessboard effect-->
-      <button id="create_chessboard">create chess board</button>
-      <button id="remove_chessboard">remove chess board</button>
-      <!-- task 2 Change button text -->
-      <button id="btn">Click Me</button>
-      <table id="chesstable">
-
-      </table>
-      <!-- Use the css()method to set the following styles for <p>:(Green background color, white text color, 25 pixels font size and a padding of 15 pixels)  -->
-      <p id="para">Use the css()method to set the following styles for this paragraph</p>
-     
-      <!-- task Use a jQuery method to remove all <div> elements with class="test" and class="demo". -->
-      <div class="test"><p>div test</p></div>
-      <div class="demo"><p>div demo </p></div>
-      <button id="remove">remove</button>
-      <button id="getclass">click to get class</button>
-      <p class="class1 class2 class3" id="test">get all the classes of this paragraph on click</p>
-      <p id="gclass"></p>
+    <!-- task1 Create a Chessboard effect-->
+    <button id="create_chessboard">create chess board</button>
+    <button id="remove_chessboard">remove chess board</button>
+    <!-- task 2 Change button text -->
+    <button id="btn">Click Me</button>
     <div class="chessboard">
+      <table id="chesstable"></table>
     </div>
+
+    <!-- Use the css()method to set the following styles for <p>:(Green background color, white text color, 25 pixels font size and a padding of 15 pixels)  -->
+    <p id="para">
+      Use the css()method to set the following styles for this paragraph
+    </p>
+
+    <!-- task Use a jQuery method to remove all <div> elements with class="test" and class="demo". -->
+    <div class="test"><p>div test</p></div>
+    <div class="demo"><p>div demo</p></div>
+    <button id="remove">remove</button>
+    <button id="getclass">click to get class</button>
+    <p class="class1 class2 class3" id="test">
+      get all the classes of this paragraph on click
+    </p>
+    <p id="gclass"></p>
+
+
+    <input type="checkbox" name="demo" id="chk" class="chk 1" value="1">
+    <input type="checkbox" name="demo" id="chk" class="chk 2" value="2">
+    <input type="checkbox" name="demo" id="chk" class="chk 3" value="3">
+    <input type="checkbox" name="demo" id="chk" class="chk 4" value="4">
+    <input type="checkbox" name="demo" id="chk" class="chk 5" value="5">
+    <button id="chkbox">Get checked</button>
+    <p id="val_chk"></p><br>
+    <p id="id_chk"></p>
+
     <script src="app.js"></script>
   </body>
 </html>

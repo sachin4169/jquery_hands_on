@@ -52,4 +52,18 @@ $("#getclass").click(()=>{
 });
 });
 
+$("#chkbox").click(()=>{
+    console.log("working")
+    $("#val_chk").empty();
+    $("#id_chk").empty();
+    $('input[name="demo"]:checked').each(function() {
+       console.log(this.value);
+       console.log()
+       var x = $(this).attr("class")
+       
+       $("#val_chk").append("value "+this.value+" ,")
+       $("#val_chk").append("class "+x+" ,")
+    });
+})
+
 // Green background color, white text color, 25 pixels font size and a padding of 15 pixels
