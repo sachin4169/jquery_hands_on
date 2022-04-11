@@ -11,16 +11,32 @@
         width: 80%;
         margin: auto;
       }
-      td {
+      .chesstd {
         width: 131px;
         height: 131px;
         /* background-color: aqua; */
       }
-      tr:nth-child(even) > td:nth-child(even) {
+      .chesstr:nth-child(even) > td:nth-child(even) {
         background-color: #000;
       }
-      tr:nth-child(odd) > td:nth-child(odd) {
+      .chesstr:nth-child(odd) > td:nth-child(odd) {
         background-color: #000;
+      }
+      .demotable {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      .demotd,
+      .demoth {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+
+      .demotr:nth-child(even) {
+        background-color: #dddddd;
       }
     </style>
   </head>
@@ -49,15 +65,56 @@
     </p>
     <p id="gclass"></p>
 
-
-    <input type="checkbox" name="demo" id="chk" class="chk 1" value="1">
-    <input type="checkbox" name="demo" id="chk" class="chk 2" value="2">
-    <input type="checkbox" name="demo" id="chk" class="chk 3" value="3">
-    <input type="checkbox" name="demo" id="chk" class="chk 4" value="4">
-    <input type="checkbox" name="demo" id="chk" class="chk 5" value="5">
+    <input type="checkbox" name="demo" id="chk" class="chk 1" value="1" />
+    <input type="checkbox" name="demo" id="chk" class="chk 2" value="2" />
+    <input type="checkbox" name="demo" id="chk" class="chk 3" value="3" />
+    <input type="checkbox" name="demo" id="chk" class="chk 4" value="4" />
+    <input type="checkbox" name="demo" id="chk" class="chk 5" value="5" />
     <button id="chkbox">Get checked</button>
-    <p id="val_chk"></p><br>
+    <p id="val_chk"></p>
+    <br />
     <p id="id_chk"></p>
+
+    <div class="table">
+      <table class="demotable">
+        <tr class="demotr">
+          <th class="demoth">Company</th>
+          <th class="demoth">Contact</th>
+          <th class="demoth">Country</th>
+        </tr>
+        <tr class="demotr">
+          <td class="demotd">Alfreds Futterkiste</td>
+          <td class="demotd">Maria Anders</td>
+          <td class="demotd">Germany</td>
+        </tr>
+        <tr class="demotr">
+          <td class="demotd">Centro comercial Moctezuma</td>
+          <td class="demotd">Francisco Chang</td>
+          <td class="demotd">Mexico</td>
+        </tr>
+        <tr class="demotr">
+          <td class="demotd">Ernst Handel</td>
+          <td class="demotd">Roland Mendel</td>
+          <td class="demotd">Austria</td>
+        </tr>
+        <tr>
+          <td class="demotd">Island Trading</td>
+          <td class="demotd">Helen Bennett</td>
+          <td class="demotd">UK</td>
+        </tr>
+        <tr class="demotr">
+          <td class="demotd">Laughing Bacchus Winecellars</td>
+          <td class="demotd">Yoshi Tannamuri</td>
+          <td class="demotd">Canada</td>
+        </tr>
+        <tr class="demotr">
+          <td class="demotd">Magazzini Alimentari Riuniti</td>
+          <td class="demotd">Giovanni Rovelli</td>
+          <td class="demotd">Italy</td>
+        </tr>
+      </table>
+    </div>
+    <button id="button1">delete all row</button>
 
     <script src="app.js"></script>
   </body>

@@ -1,15 +1,15 @@
 $("#create_chessboard").click(()=> {
     $("#chesstable").empty();
     console.log("clicked");
-    var trow = `<tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    var trow = `<tr class="chesstr">
+    <td class="chesstd"></td>
+    <td class="chesstd"></td>
+    <td class="chesstd"></td>
+    <td class="chesstd"></td>
+    <td class="chesstd"></td>
+    <td class="chesstd"></td>
+    <td class="chesstd"></td>
+    <td class="chesstd"></td>
   </tr>`
 
   $("#chesstable").css({"border":"1px solid black"})
@@ -65,5 +65,7 @@ $("#chkbox").click(()=>{
        $("#val_chk").append("class "+x+" ,")
     });
 })
-
+$('#button1').click(function(){ 
+    $(".demotable").find("tr:gt(1)").remove();
+  });
 // Green background color, white text color, 25 pixels font size and a padding of 15 pixels
