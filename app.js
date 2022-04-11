@@ -75,4 +75,9 @@ $('#button1').click(function(){
       var value = $("#int_li").val()
       $("#list").append("<li>"+value+"</li>");
   });
+
+  $("#new_p").click(()=>{
+      console.log("clicked");
+    $('#new_p').toggleClass("important");
+  });
 // Green background color, white text color, 25 pixels font size and a padding of 15 pixels
